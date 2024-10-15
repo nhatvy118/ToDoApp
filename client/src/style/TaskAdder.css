@@ -1,0 +1,30 @@
+/* src/styles/TaskAdder.css */
+
+.task-adder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px; /* Adjust the size as needed */
+    height: 150px; /* Adjust the size as needed */
+    border-radius: 10px;
+    background-color: #cce5cc;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.2s;
+    margin-left: 8px;
+  }
+  
+.task-adder:hover {
+    background-color: #b4d6b4;
+    transform: scale(1.05);
+}
+  
+.add-task-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    color: #3d5c3d;
+}

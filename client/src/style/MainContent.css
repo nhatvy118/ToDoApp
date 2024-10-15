@@ -1,0 +1,19 @@
+/* styles.css */
+.main-content {
+    width: 100%;
+    box-sizing: border-box;
+}
+  
+.header {
+    width: 100%;            
+    background-color: #f8f9fa; 
+    padding: 1rem;       
+}
+  
+.task-adder {     
+    margin-top: 20px;     
+    padding: 20px;         
+    border-radius: 8px;    
+}
+
+  

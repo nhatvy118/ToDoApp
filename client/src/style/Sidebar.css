@@ -1,0 +1,44 @@
+/* src/styles/Sidebar.css */
+.sidebar {
+    width: 250px;
+    background-color: #e5f4e5;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    margin-right: 20px;
+}
+  
+.logo {
+    padding: 8px;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #3d5c3d;
+}
+.logo-image{
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+}
+  
+.menu {
+    list-style-type: none;
+    padding: 0;
+}
+  
+.menu-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #3d5c3d;
+    font-weight: bold;
+}
+  
+.menu-item:hover {
+    background-color: #d3e5d3;
+  }
+  
+.icon-tasks, .icon-important, .icon-completed {
+    margin-right: 10px;
+}
+  

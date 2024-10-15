@@ -1,0 +1,25 @@
+.app{
+  width: 100vw;
+  display: flex;
+  height: 100vh;
+
+}
+
+
+.Sidebar {
+  flex-basis: 25%; 
+  border-right: 1px solid #ccc; 
+}
+
+.MainContent {
+  flex-basis: 75%; 
+  overflow-y: auto; 
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #dbf0e8;
+  margin: 0;
+  padding: 0;
+}
