@@ -18,15 +18,20 @@ User-friendly interface with task status management.
 Before running the application, ensure that you have the following installed:
 
 Node.js (for running the frontend)
+
 Python 3.x (for running the backend)
+
 Flask and necessary Python packages (Flask, Flask-Cors, etc.)
+
 SQLite (pre-installed with Python)
 # How to Run the Application
 For FE
 > cd ToDoApp/client
+
 > npm run dev
 For BE
 > cd ToDoApp/server/venv
+
 > python main.py
 # Screenshots
 <img width="949" alt="image" src="https://github.com/user-attachments/assets/377ed56a-f1e6-46fd-b95e-b6dafab7fcf5">
