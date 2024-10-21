@@ -2,7 +2,6 @@
 import React from 'react';
 import plus_icon from '../assets/plus.png';
 import '../style/TaskAdder.css';
-import { useState } from 'react';
 
 const TaskAdder = ({ onClick }) => {
   return (

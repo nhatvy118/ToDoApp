@@ -4,10 +4,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 150px; /* Adjust the size as needed */
-    height: 150px; /* Adjust the size as needed */
+    width: 1%;
+    height: 1%;
     border-radius: 10px;
     background-color: #cce5cc;
+    border: 1px solid #e5e7eb;
     cursor: pointer;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s, transform 0.2s;
@@ -17,6 +18,8 @@
 .task-adder:hover {
     background-color: #b4d6b4;
     transform: scale(1.05);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+                0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
   
 .add-task-btn {
@@ -25,6 +28,10 @@
     align-items: center;
     background: none;
     border: none;
-    font-size: 1.2rem;
     color: #3d5c3d;
+}
+
+.plus-icon {
+  width: 24px;     
+  height: 24px;     
 }

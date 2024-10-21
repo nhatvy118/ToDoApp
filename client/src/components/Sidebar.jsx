@@ -8,7 +8,10 @@ import star_icon from '../assets/star_icon.png';
 
 
 
-function Sidebar() {
+function Sidebar({onSelect,selectedStatus}) {
+  const handleMenuClick = (status) => {
+      onSelect(status);
+  };
   return (
     <div className="Sidebar">
       <h2 className="logo">
@@ -16,15 +19,24 @@ function Sidebar() {
         TO-DO
       </h2>
       <ul className="menu">
-        <li className="menu-item">
+        <li 
+          className={`menu-item ${selectedStatus === 'pending' ? 'active' : ''}`}
+          onClick={() => handleMenuClick('pending')}
+        >
           <img src={tick_icon} alt="Logo" className="logo-image" /> 
           Tasks
         </li>
-        <li className="menu-item">
+        <li 
+          className={`menu-item ${selectedStatus === 'important' ? 'active' : ''}`}
+          onClick={() => handleMenuClick('important')}
+        >
           <img src={star_icon} alt="Logo" className="logo-image" /> 
           Important
         </li>
-        <li className="menu-item">
+        <li 
+          className={`menu-item ${selectedStatus === 'done' ? 'active' : ''}`}
+          onClick={() => handleMenuClick('done')}
+        >
           <img src={bin_icon} alt="Logo" className="logo-image" /> 
           Completed
         </li>

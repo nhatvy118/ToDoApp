@@ -5,10 +5,19 @@ import '../style/App.css'
 import MainContent from './MainContent.jsx';
 
 function App() {
+  const [selectedStatus, setSelectedStatus] = useState('pending')
+  const handleStatusSelect = (status) => {
+    setSelectedStatus(status)
+  }
   return (
     <div className="app">
-      <Sidebar className="Sidebar"/>
-      <MainContent className="MainContent"/>
+      <Sidebar className="Sidebar"
+        onSelect={handleStatusSelect}
+        selectedStatus={selectedStatus} 
+      />
+      <MainContent className="MainContent"
+        selectedStatus={selectedStatus}
+      />
     </div>
   )
 }

@@ -1,26 +1,27 @@
 /* DialogAddTask.css */
 .dialog-container {
+    position: fixed; /* Fixes the dialog in the center of the viewport */
+    top: 50%; /* Positions the dialog in the vertical center */
+    left: 50%; /* Positions the dialog in the horizontal center */
+    transform: translate(-50%, -50%);
     background-color: #FFFFFF;
     border-radius: 15px;
     padding: 20px;
-    width: 300px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     margin: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
+    cursor: move;
+}
   
 .dialog-title {
+    text-align: center;
     font-size: 18px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     font-weight: bold;
 }
   
   
 .dialog-input {
-    width: 100%;
+    width: 95%;
     padding: 10px;
     margin-bottom: 10px;
     border-radius: 8px;
@@ -29,18 +30,24 @@
 }
   
 .dialog-textarea {
-    width: 100%;
+    width: 95%;
     padding: 10px;
     border-radius: 8px;
     border: 1px solid #E0E0E0;
-    font-size: 14px;
-    margin-bottom: 15px;
+    font-size: 14px8;
+    margin-bottom: px;
     resize: none;
     height: 80px;
 }
   
-.dialog-button {
+.dialog-button-container {
+    display: flex;
     width: 100%;
+    justify-content: space-between;
+}
+  
+.dialog-button {
+    width: 40%; 
     padding: 12px;
     background-color: #3B82F6;
     color: white;
@@ -50,4 +57,31 @@
     font-size: 14px;
     font-weight: bold;
 }
+.dialog-priority-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1rem 0;
+  }
   
+.dialog-priority-button {
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    transition: background-color 0.3s;
+}
+  
+.dialog-priority-button.important {
+    background-color: #FF8A8A;
+}
+  
+.dialog-priority-button.medium {
+    background-color: #FFE6A5;
+}
+  
+.dialog-priority-button.normal {
+    background-color: #73EC8B;
+}

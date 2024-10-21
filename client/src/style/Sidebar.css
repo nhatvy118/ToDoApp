@@ -36,9 +36,14 @@
   
 .menu-item:hover {
     background-color: #d3e5d3;
-  }
+}
   
 .icon-tasks, .icon-important, .icon-completed {
     margin-right: 10px;
 }
   
+  
+.menu-item.active {
+    background-color: #d3e5d3;
+    font-weight: bold;
+}
