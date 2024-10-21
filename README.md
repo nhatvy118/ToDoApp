@@ -25,11 +25,12 @@ Flask and necessary Python packages (Flask, Flask-Cors, etc.)
 
 SQLite (pre-installed with Python)
 # How to Run the Application
-For FE
+## For FE
 > cd ToDoApp/client
 
 > npm run dev
-For BE
+
+## For BE
 > cd ToDoApp/server/venv
 
 > python main.py
