@@ -2,12 +2,17 @@
  ToDoApp is a simple task management application that helps users organize and keep track of their to-do tasks. The application is built using React for the frontend, Flask for the backend, and SQLite as the database.
 # Tech Stack
 Frontend: React (JavaScript)
+
 Backend: Flask (Python)
+
 Database: SQLite
 # Features
 Create, update, and delete tasks.
+
 Filter tasks by status: pending, important, and completed.
+
 Store tasks in a lightweight SQLite database.
+
 User-friendly interface with task status management.
 # Prerequisites
 Before running the application, ensure that you have the following installed:
